@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span>Đường kính: </span>
+<input type="text" id="id2"> <br> <br>
+Chu vi là : <span id="id3"></span> <br> <br>
+<button onclick="tinh()" id="tinh">Tính</button>
+</body>
+<script>
+    function tinh(){
+        let a = document.getElementById("id2").value
+        let b = a * 3.14
+        document.getElementById("id3").innerHTML = b
+    }
+</script>
+</html>
