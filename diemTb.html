@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<p>Điểm Vật lý:</p>
+<input type="number" id="ly">
+<p>Điểm Hóa học:</p>
+<input type="number" id="hoa">
+<p>Điểm Sinh học:</p>
+<input type="number" id="sinh">
+<br> <br>
+</form>
+
+<button id="diemTb" onclick="diemTb()">Điểm Trung Bình</button>
+</body>
+<script>
+    function diemTb(){
+        let a = Number(document.getElementById("ly").value)
+        let b = Number(document.getElementById("hoa").value)
+        let c = Number(document.getElementById("sinh").value)
+        let dtb = (a + b + c)/3
+        document.write(dtb)
+    }
+</script>
+</html>

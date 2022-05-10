@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<span>Bán kính: </span><input type="text" id="bankinh"> <br> <br>
+<button id="id1" onclick="tinh()">Tính diện tích</button>
+<br> <br>
+Diện Tích là: <span id="hi"></span>
+</body>
+<script>
+    function tinh(){
+        let a = document.getElementById("bankinh").value
+        let b = (a * a) * 3.14
+        document.getElementById("hi").innerHTML = b
+    }
+</script>
+</html>
